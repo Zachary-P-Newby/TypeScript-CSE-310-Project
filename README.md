@@ -1,6 +1,6 @@
 # Overview
 
-To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using ==this== youtube course by **Net Ninja** [TypeScript Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) The lesson folders refer to the lessons and associated files I completed as part of that course.
+To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using this youtube [TypeScript Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by **Net Ninja**.  The lesson folders refer to the lessons and associated files I completed as part of that tutorial series. **They are not the demonstration files, and should not be considered my work. They are only here for easy access.**
 
 {Provide a description of the software that you wrote to demonstrate the TypeScript language.}
 

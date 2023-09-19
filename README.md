@@ -1,6 +1,6 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using ==this== youtube course by **Net Ninja** [TypeScript Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) The lesson folders refer to the lessons and associated files I completed as part of that course.
 
 {Provide a description of the software that you wrote to demonstrate the TypeScript language.}
 

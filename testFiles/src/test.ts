@@ -1,21 +1,4 @@
-//import { Entry } from "./classes/entry.js";
-
-class Entry{
-    /* readonly title: string = "";
-    readonly content: string;
-    readonly date: Date = new Date; */
-
-
-    constructor(
-        readonly title: string,
-        readonly content: string,
-        readonly date: string){}
-    
-    format(): string {
-        return `${this.date} - ${this.title}:\n ${this.content}`;
-    }
-    
-}
+import { Entry } from "./classes/entry";
 
 const today = new Date();
 
@@ -33,12 +16,16 @@ const contentArea = document.querySelector("#contentArea")! as HTMLTextAreaEleme
 const form = document.querySelector("form")!;
 /* const submitButton = document.querySelector("#submitButton")! as HTMLInputElement; */
 
+
+
 function createEntry(entryTitle: string, entryContent: string): Entry{
     
     let dateString = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
     let newEntry = new Entry(entryTitle, entryContent, dateString);
 
-    return newEntry;    
+
+    console.log(newEntry.format())
+    return newEntry;  
 }
 
 

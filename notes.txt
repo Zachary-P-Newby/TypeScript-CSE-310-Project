@@ -3,3 +3,6 @@ in tsconfig file, to keep it from pulling from typescript files outside the root
 "include": [">rootDirName<"] 
 
 include and folder name must be in "", place outside the "compilerOptions" object
+
+
+Remeber to set the type attribute in a html script element to "module"

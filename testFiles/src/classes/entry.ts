@@ -1,6 +1,4 @@
-import { stickyNote } from "../interfaces/stickyNote";
-
-export class Entry implements stickyNote{
+export class Entry{
     /* readonly title: string = "";
     readonly content: string;
     readonly date: Date = new Date; */
@@ -11,8 +9,8 @@ export class Entry implements stickyNote{
         readonly content: string,
         readonly date: string){}
     
-    format(): String {
-        return `${this.date} - ${this.title}:\n ${this.content}`;
+    format(): string {
+        return `${this.title}|${this.content}|${this.date}`;
     }
-    
+
 }

@@ -1,0 +1,5 @@
+in tsconfig file, to keep it from pulling from typescript files outside the root directory, add
+
+"include": [">rootDirName<"] 
+
+include and folder name must be in "", place outside the "compilerOptions" object

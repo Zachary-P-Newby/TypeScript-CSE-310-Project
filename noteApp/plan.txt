@@ -1,0 +1,12 @@
+NOtes App:
+
+A small browser app that allows user to write, read, and delete notes.
+
+Written notes are displayed to the browser window using a render method
+
+
+Class: note
+
+title: string
+content: string
+date: datetime

@@ -1,6 +1,6 @@
 # Overview
 
-To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using this youtube [TypeScript Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by **Net Ninja**.  The lesson folders refer to the lessons and associated files I completed as part of that tutorial series. **They are not the demonstration files, and should not be considered my work. They are only here for easy access.**
+To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using this youtube [TypeScript Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by **Net Ninja**.  The lesson folders refer to the lessons and associated files I completed as part of that tutorial series. **They are not the demonstration files, and should not be considered my work. They are only here for easy access.**
 
 {Provide a description of the software that you wrote to demonstrate the TypeScript language.}
 
@@ -12,7 +12,10 @@ To expand my knowledge and capabilities in JavaScript, I learned how to program 
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+ - I used VS Code as my text editor for this project.
+ - Node.js was used to install the TypeScript Compiler.
+ - TypeScript requries a compiler to be run since browsers do not understand it, so that was used.
+ - The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for VS code was used for testing webpages and scripts.
 
 {Describe the programming language that you used and any libraries.}
 
@@ -20,7 +23,7 @@ To expand my knowledge and capabilities in JavaScript, I learned how to program 
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
+- [TypeScript Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work

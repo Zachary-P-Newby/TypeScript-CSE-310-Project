@@ -1,6 +1,7 @@
-import { Entry } from "./classes/entry";
+import { Entry } from "./classes/entry.js";
 
 const today = new Date();
+let dateString = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
 
 const message = document.createElement('h1');
 
@@ -8,26 +9,24 @@ message.innerText = "Hog Freakin' Wild!"
 
 document.querySelector("header")!.appendChild(message);
 
-
-const ul = document.querySelector("ul")!;
+const noteDisplay = document.querySelector("ul")!;
+let noteCount = 0;
 
 const titleInput = document.querySelector("#titleInput")! as HTMLInputElement;
 const contentArea = document.querySelector("#contentArea")! as HTMLTextAreaElement;
 const form = document.querySelector("form")!;
+const deleteAll = document.querySelector("#deleteAll")! as HTMLButtonElement;
 /* const submitButton = document.querySelector("#submitButton")! as HTMLInputElement; */
 
 
-
-function createEntry(entryTitle: string, entryContent: string): Entry{
+function createEntry(entryTitle: string, entryContent: string, entryDate: string = dateString): Entry{
     
-    let dateString = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
-    let newEntry = new Entry(entryTitle, entryContent, dateString);
-
-
-    console.log(newEntry.format())
+    /* let dateString = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`; */
+    let newEntry = new Entry(entryTitle, entryContent, entryDate);
+    localStorage.setItem(`${newEntry.title}`,`${newEntry.format()}`);
+    noteCount ++;
     return newEntry;  
 }
-
 
 
 function displayEntry(newEntry: Entry): void{
@@ -60,24 +59,46 @@ function displayEntry(newEntry: Entry): void{
     item.appendChild(itemContent)
     deleteBtn.addEventListener("click", () =>{
 
-        /* Add pop up window are you sure you want to delete this. */
-        ul.removeChild(item);
+        localStorage.removeItem(`${newEntry.title}`);
+        noteDisplay.removeChild(item);
     })
     
     /* item.innerText = newEntry.format(); */
-    ul.appendChild(item);
+    noteDisplay.appendChild(item);
 }
 
+
+function loadNotes(): void{
+    for (var i=0; i < localStorage.length; i++){
+       let loadedNote = localStorage.getItem(localStorage.key(i) as string)as string;
+       let noteList = loadedNote.split("|")
+       let newEntry = createEntry(noteList[0],noteList[1],noteList[2]);
+       displayEntry(newEntry);
+    }
+
+}
 
 
 form.addEventListener("submit", (e:Event) => {
     e.preventDefault();
-    
-    let latestEntry = createEntry(titleInput.value,contentArea.value)
 
+    let latestEntry = createEntry(titleInput.value,contentArea.value,dateString)
     displayEntry(latestEntry);
-
+    console.log(localStorage);
+    console.log(latestEntry.format());
 })
 
 
-/* Narrator:	According to all known laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. */
+
+deleteAll.addEventListener("click", ()=>{
+    localStorage.clear();
+    console.log(localStorage);
+    noteDisplay.innerHTML = "";
+    }
+    
+)
+
+
+console.log(localStorage);
+loadNotes();
+/* Narrator:	According to all known laws of aviation, there is no way that a bee shonoteDisplayd be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. */

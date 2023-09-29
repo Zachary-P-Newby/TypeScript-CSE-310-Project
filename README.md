@@ -1,10 +1,10 @@
 # Overview
 
-To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using this youtube [TypeScript Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by **Net Ninja**.  The lesson folders refer to the lessons and associated files I completed as part of that tutorial series. **They are not the demonstration files, and should not be considered my work. They are only here for easy access.**
+To expand my knowledge and capabilities in JavaScript, I learned how to program in TypeScript, - its superset - using this youtube [TypeScript Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) by **Net Ninja**.
 
-{Provide a description of the software that you wrote to demonstrate the TypeScript language.}
+I have created a simple webpage that allows the user to create notes, display them on screen, and store them in local memory. When the person loads the page, any exsisting notes will be loaded from localStorage and displayed on the page.
 
-{Describe your purpose for writing this software.}
+My purpose in creating this website was to apply my typescript knowledge and make a simple note taking app.
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 

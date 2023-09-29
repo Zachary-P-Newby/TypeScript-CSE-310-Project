@@ -82,7 +82,7 @@ function loadNotes(): void{
 form.addEventListener("submit", (e:Event) => {
     e.preventDefault();
 
-    let latestEntry = createEntry(titleInput.value,contentArea.value,dateString)
+    let latestEntry = createEntry(titleInput.value,contentArea.value);
     displayEntry(latestEntry);
     console.log(localStorage);
     console.log(latestEntry.format());

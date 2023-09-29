@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>ZachNote</title>
+</head>
+<body>
+    <header>
+        <h1>ZachNote</h1>
+        <p>
+            <span id="dateSpan"></span>
+        </p>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label>Title: <input id="titleInput"></label>
+                <label>Content: <textarea id="contentArea"></textarea></label>
+                <input type="submit" id="submitButton"></input>
+            </fieldset>
+        </form>
+
+        <button id="deleteAll">Delete All Notes</button>
+
+        <div id="noteDisplayDiv">
+            <ul id="noteDisplay">
+
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>&#169; Zach Newby 2023</h2>
+    </footer>
+    
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>

@@ -6,22 +6,19 @@ I have created a simple webpage that allows the user to create notes, display th
 
 My purpose in creating this website was to apply my typescript knowledge and make a simple note taking app.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+[Zachnotes](https://zachary-p-newby.github.io/TypeScript-CSE-310-Project/final/public/zachnotes.html)
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
-
+ - Typescript was my language of choice for this project. HTML and CSS were also used.
  - I used VS Code as my text editor for this project.
  - Node.js was used to install the TypeScript Compiler.
  - TypeScript requries a compiler to be run since browsers do not understand it, so that was used.
  - The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension for VS code was used for testing webpages and scripts.
 
-{Describe the programming language that you used and any libraries.}
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [TypeScript Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 - [Stackoverflow - Typescript: Dont include exports when compiling](https://stackoverflow.com/questions/59096077/typescript-dont-include-exports-when-compiling) - Export issues
@@ -30,12 +27,6 @@ My purpose in creating this website was to apply my typescript knowledge and mak
 - [Looping through localStorage in HTML5 and JavaScript](https://stackoverflow.com/questions/3138564/looping-through-localstorage-in-html5-and-javascript) - Loading notes from localStorage
 - [Remove all child elements of a DOM node in JavaScript](https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript) - Note li element deletion
 
-<!-- - [Web Site Name](http://url.link.goes.here) -->
-
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+If I ever feel so inclined, in the future I may add in a pop-up window that asks are you sure when you delete one or all of your notes.

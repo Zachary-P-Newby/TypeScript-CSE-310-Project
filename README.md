@@ -8,7 +8,7 @@ My purpose in creating this website was to apply my typescript knowledge and mak
 
 [Zachnotes](https://zachary-p-newby.github.io/TypeScript-CSE-310-Project/final/public/zachnotes.html)
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Video Demonstration](https://www.youtube.com/watch?v=1gmUNY4V2-A)
 
 # Development Environment
  - Typescript was my language of choice for this project. HTML and CSS were also used.
